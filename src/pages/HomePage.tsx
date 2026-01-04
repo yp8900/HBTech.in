@@ -13,7 +13,15 @@ import {
   Award,
   CheckCircle,
   Zap,
-  TrendingUp
+  TrendingUp,
+  Snowflake,
+  Flame,
+  Gauge,
+  Radio,
+  Cpu,
+  Fan,
+  Building2,
+  Sparkles,
 } from 'lucide-react';
 
 interface HomePageProps {
@@ -47,7 +55,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       description: 'Complete HVAC solutions from design to commissioning for commercial and industrial facilities.',
     },
     {
-      icon: Settings,
+      icon: Cpu,
       title: 'BMS Integration',
       description: 'Smart building management systems for energy efficiency and automated control.',
     },
@@ -57,9 +65,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       description: 'Comprehensive AMC packages to keep your systems running at peak performance.',
     },
     {
-      icon: Shield,
-      title: 'Equipment Sales',
-      description: 'Authorized dealer of premium chillers, VRF/VRV, AHUs, FCUs, and ducted AC systems.',
+      icon: Snowflake,
+      title: 'Cooling Systems',
+      description: 'Premium chillers, VRF/VRV systems, and central AC solutions for optimal comfort.',
     },
     {
       icon: Clock,
@@ -67,9 +75,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       description: '24/7 emergency repair services with rapid response times across Delhi NCR.',
     },
     {
-      icon: Zap,
-      title: 'System Upgrades',
-      description: 'Modernize your existing HVAC systems for improved efficiency and reduced costs.',
+      icon: Gauge,
+      title: 'Energy Monitoring',
+      description: 'Real-time monitoring and optimization for reduced energy costs and peak performance.',
     },
   ];
 

@@ -11,6 +11,16 @@ import {
   CheckCircle,
   ChevronDown,
   PhoneCall,
+  Snowflake,
+  Flame,
+  Gauge,
+  Radio,
+  Cpu,
+  Activity,
+  Fan,
+  Layers,
+  ClipboardCheck,
+  Tool,
 } from 'lucide-react';
 
 interface ServicesPageProps {
@@ -166,26 +176,38 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section with Background */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+    <div className="min-h-screen bg-dark-950">
+      {/* Hero Section with Animated Background */}
+      <section className="relative bg-gradient-to-br from-dark-900 via-blue-950 to-dark-900 text-white py-20 overflow-hidden">
+        {/* Animated Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-cyan-500/20 to-blue-600/20 animate-gradient"></div>
+        
+        {/* Particle Effect Background */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-10 left-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+          <div className="absolute top-20 right-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-10 left-1/2 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{ animationDelay: '4s' }}></div>
+        </div>
+        
+        {/* Background Image Overlay */}
+        <div className="absolute inset-0 opacity-10">
           <img
             src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1920&h=600&fit=crop&auto=format"
             alt="HVAC Services"
             className="w-full h-full object-cover"
           />
         </div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Our Services</h1>
+          <p className="text-xl md:text-2xl text-cyan-400 max-w-3xl mx-auto">
             Comprehensive HVAC and BMS solutions for commercial and industrial facilities
           </p>
         </div>
       </section>
 
       {/* Service Categories with Images */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-dark-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {serviceCategories.map((category, index) => (
@@ -208,22 +230,22 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-xl transition-shadow"
+                className="modern-card hover:shadow-xl transition-shadow"
               >
-                <service.icon className="text-blue-600 mb-4" size={48} />
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <service.icon className="text-cyan-400 mb-4" size={48} />
+                <h3 className="text-2xl font-bold text-white mb-4">
                   {service.title}
                 </h3>
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-300 mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <div className="mb-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">Key Features:</h4>
+                  <h4 className="font-semibold text-white mb-3">Key Features:</h4>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-gray-700">
+                      <li key={idx} className="flex items-start gap-2 text-gray-300">
                         <CheckCircle
-                          className="text-green-500 flex-shrink-0 mt-1"
+                          className="text-green-400 flex-shrink-0 mt-1"
                           size={16}
                         />
                         <span>{feature}</span>
@@ -233,7 +255,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
                 </div>
                 <button
                   onClick={() => onNavigate('contact')}
-                  className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center gap-2"
+                  className="text-cyan-400 font-semibold hover:text-cyan-300 inline-flex items-center gap-2"
                 >
                   Get a Quote
                   <PhoneCall size={16} />
@@ -244,34 +266,34 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
         </div>
       </section>
 
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-dark-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-cyan-400">
               Common questions about our HVAC and BMS services
             </p>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div key={index} className="rounded-lg shadow-md overflow-hidden">
                 <button
                   onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
-                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-4 text-left flex items-center justify-between glass-card hover:bg-dark-800/50 transition-colors"
                 >
-                  <span className="font-semibold text-gray-900">{faq.question}</span>
+                  <span className="font-semibold text-white">{faq.question}</span>
                   <ChevronDown
-                    className={`text-blue-600 transition-transform ${
+                    className={`text-cyan-400 transition-transform ${
                       expandedFaq === index ? 'rotate-180' : ''
                     }`}
                     size={20}
                   />
                 </button>
                 {expandedFaq === index && (
-                  <div className="px-6 py-4 bg-gray-50 border-t">
-                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                  <div className="px-6 py-4 bg-dark-800/50 border-t border-gray-700">
+                    <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
                   </div>
                 )}
               </div>
@@ -280,12 +302,12 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-br from-blue-600 via-cyan-600 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl mb-8">
             Contact us today for a free consultation and customized quote for your project
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -7,6 +7,7 @@ import ServicesPage from './pages/ServicesPage';
 import ProjectsPage from './pages/ProjectsPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
+import TestimonialsPage from './pages/TestimonialsPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -35,6 +36,8 @@ function App() {
         return <BlogPage />;
       case 'contact':
         return <ContactPage />;
+      case 'testimonials':
+        return <TestimonialsPage />;
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }
@@ -48,6 +51,7 @@ function App() {
       projects: 'Our Projects - HVAC Portfolio | HBTechs.in',
       blog: 'HVAC Blog & Resources | HBTechs.in',
       contact: 'Contact Us - HVAC Services Delhi NCR | HBTechs.in',
+      testimonials: 'Customer Reviews & Testimonials | HBTechs.in',
     };
 
     document.title = titles[currentPage] || titles.home;
