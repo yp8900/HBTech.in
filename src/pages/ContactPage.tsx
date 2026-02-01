@@ -73,11 +73,11 @@ export default function ContactPage() {
                         +91 99999 99999
                       </a>
                       <br />
-                      <a href="tel:+911244567890" className="hover:text-cyan-400">
-                        +91 124 456 7890
+                      <a href="tel:+911120667317" className="hover:text-cyan-400">
+                        +91 11 20667317
                       </a>
                     </p>
-                    <p className="text-sm text-gray-400 mt-1">24/7 Emergency Hotline</p>
+                    <p className="text-sm text-gray-400 mt-1">Landline & 24/7 Emergency Hotline</p>
                   </div>
                 </div>
 
