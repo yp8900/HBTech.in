@@ -92,8 +92,8 @@ export default function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} />
-                <a href="tel:+919999999999" className="hover:text-blue-400">
-                  +91 99999 99999
+                <a href="tel:+919990911982" className="hover:text-blue-400">
+                  +91 9990911982
                 </a>
               </li>
               <li className="flex items-center gap-2">

@@ -485,11 +485,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             Our team is available 24/7 for emergency HVAC services
           </p>
           <a
-            href="tel:+919999999999"
-            className="inline-flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors"
+            href="tel:+919990911982"
+            className="inline-flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors shadow-xl"
           >
-            <PhoneCall size={24} />
-            Call Now: +91 99999 99999
+            <Phone size={24} />
+            Call Now: +91 9990911982
           </a>
         </div>
       </section>

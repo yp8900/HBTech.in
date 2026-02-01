@@ -319,7 +319,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
               Contact Us
             </button>
             <a
-              href="tel:+919999999999"
+              href="tel:+919990911982"
               className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center justify-center gap-2"
             >
               <PhoneCall size={20} />

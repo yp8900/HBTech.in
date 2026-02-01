@@ -69,15 +69,15 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-white mb-1">Phone Numbers</h3>
                     <p className="text-gray-300">
-                      <a href="tel:+919999999999" className="hover:text-cyan-400">
-                        +91 99999 99999
+                      <a href="tel:+919990911982" className="hover:text-cyan-400">
+                        +91 9990911982
                       </a>
                       <br />
-                      <a href="tel:+911120667317" className="hover:text-cyan-400">
-                        +91 11 20667317
+                      <a href="tel:+911206673172" className="hover:text-cyan-400">
+                        +911 206673172
                       </a>
                     </p>
-                    <p className="text-sm text-gray-400 mt-1">Landline & 24/7 Emergency Hotline</p>
+                    <p className="text-sm text-gray-400 mt-1">Mobile & Landline</p>
                   </div>
                 </div>
 
@@ -163,11 +163,11 @@ export default function ContactPage() {
             For emergency HVAC services, call our 24/7 hotline
           </p>
           <a
-            href="tel:+919999999999"
+            href="tel:+919990911982"
             className="inline-flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors shadow-xl"
           >
             <Phone size={24} />
-            +91 99999 99999
+            +91 9990911982
           </a>
         </div>
       </section>
