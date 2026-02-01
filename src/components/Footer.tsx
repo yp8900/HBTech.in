@@ -16,7 +16,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-white text-lg font-bold mb-2 leading-tight">
-              HVAC BMS TECHNOLOGIES<br/>SERVICES
+              HVAC BMS TECHNOLOGIES
             </h3>
             <p className="text-sm text-cyan-400 font-semibold mb-4">
               HBTechs.in
@@ -107,7 +107,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
-          <p>&copy; {new Date().getFullYear()} HVAC BMS Technologies Services (HBTechs.in). All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} HVAC BMS Technologies (HBTechs.in). All rights reserved.</p>
           <p className="mt-2">
             ISO 9001:2015 Certified | Licensed HVAC Contractor | Serving Delhi NCR
           </p>

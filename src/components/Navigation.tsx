@@ -37,13 +37,13 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
               {/* Full Company Name - Show on all screen sizes */}
               <div className="relative leading-none">
                 <div className="brand-3d shine-effect group-hover:scale-105 transition-transform text-xs sm:text-sm md:text-xl lg:text-2xl font-black whitespace-nowrap">
-                  HVAC BMS TECHNOLOGIES SERVICES
+                  HVAC BMS TECHNOLOGIES
                 </div>
                 
                 {/* Glow Effect */}
                 <div className="absolute inset-0 blur-xl opacity-50 group-hover:opacity-75 transition-opacity pointer-events-none">
                   <div className="bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 bg-clip-text text-transparent font-black text-xs sm:text-sm md:text-xl lg:text-2xl whitespace-nowrap">
-                    HVAC BMS TECHNOLOGIES SERVICES
+                    HVAC BMS TECHNOLOGIES
                   </div>
                 </div>
               </div>
