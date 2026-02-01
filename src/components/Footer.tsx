@@ -88,7 +88,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin size={18} className="flex-shrink-0 mt-1" />
-                <span>123 Business Park, Sector 18, Gurgaon, Haryana 122015</span>
+                <span>6/2 Pratap Enclave, Mohan Garden<br />Ground Floor, Gurudwara Road<br />New Delhi, West Delhi - 110058<br />India</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} />
