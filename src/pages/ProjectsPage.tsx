@@ -38,6 +38,35 @@ export default function ProjectsPage({ onNavigate }: ProjectsPageProps) {
     'Completed Chiller Installation',
   ];
 
+  // Second project gallery
+  const gallery2Images = [
+    '/images/gallery/project2-1.jpg',
+    '/images/gallery/project2-2.jpg',
+    '/images/gallery/project2-3.jpg',
+    '/images/gallery/project2-4.jpg',
+    '/images/gallery/project2-5.jpg',
+    '/images/gallery/project2-6.jpg',
+    '/images/gallery/project2-7.jpg',
+    '/images/gallery/project2-8.jpg',
+    '/images/gallery/project2-9.jpg',
+    '/images/gallery/project2-10.jpg',
+    '/images/gallery/project2-11.jpg',
+  ];
+
+  const gallery2Captions = [
+    'Project Site Overview',
+    'Equipment Installation',
+    'Technical Team at Work',
+    'System Installation Progress',
+    'Detailed Installation Work',
+    'Equipment Setup',
+    'Installation Process',
+    'Technical Implementation',
+    'Team Collaboration',
+    'Project Execution',
+    'Final Setup Phase',
+  ];
+
   useEffect(() => {
     fetchProjects();
   }, []);
@@ -132,6 +161,50 @@ export default function ProjectsPage({ onNavigate }: ProjectsPageProps) {
             <Gallery3DCarousel images={galleryImages} autoRotate={true} rotationSpeed={5000} />
           ) : (
             <GalleryMasonry images={galleryImages} captions={galleryCaptions} />
+          )}
+        </div>
+      </section>
+
+      {/* Second Project Gallery Section */}
+      <section className="py-16 bg-dark-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">
+              Recent Installation Project
+            </h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+              Professional HVAC system installation and commissioning
+            </p>
+            
+            {/* Gallery View Toggle */}
+            <div className="flex justify-center gap-3 mb-8">
+              <button
+                onClick={() => setGalleryView('3d')}
+                className={`px-6 py-2 rounded-lg font-medium transition-all ${
+                  galleryView === '3d'
+                    ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg'
+                    : 'glass-card text-gray-300 hover:bg-dark-800/50'
+                }`}
+              >
+                3D Carousel
+              </button>
+              <button
+                onClick={() => setGalleryView('masonry')}
+                className={`px-6 py-2 rounded-lg font-medium transition-all ${
+                  galleryView === 'masonry'
+                    ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg'
+                    : 'glass-card text-gray-300 hover:bg-dark-800/50'
+                }`}
+              >
+                Grid View
+              </button>
+            </div>
+          </div>
+
+          {galleryView === '3d' ? (
+            <Gallery3DCarousel images={gallery2Images} autoRotate={true} rotationSpeed={5000} />
+          ) : (
+            <GalleryMasonry images={gallery2Images} captions={gallery2Captions} />
           )}
         </div>
       </section>
