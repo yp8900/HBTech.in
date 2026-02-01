@@ -84,7 +84,7 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">HVAC BMS TECHNOLOGIES</span>
             <br />
-            <span className="text-white">SERVICE PVT LTD.</span>
+            <span className="text-white">SERVICES</span>
           </h1>
           <p className="text-xl md:text-2xl text-cyan-400 max-w-3xl mx-auto">
             Leading HVAC & BMS solutions provider in Delhi NCR, committed to excellence since 2014

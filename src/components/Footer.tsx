@@ -16,7 +16,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-white text-lg font-bold mb-2 leading-tight">
-              HVAC BMS TECHNOLOGIES<br/>SERVICE PVT LTD.
+              HVAC BMS TECHNOLOGIES<br/>SERVICES
             </h3>
             <p className="text-sm text-cyan-400 font-semibold mb-4">
               HBTechs.in
